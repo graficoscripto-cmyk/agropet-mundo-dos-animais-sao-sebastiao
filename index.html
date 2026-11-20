@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Agropet Mundo dos Animais | Pet shop em São Sebastião - SP</title>
+<meta name="description" content="Rações, petiscos, medicamentos e brinquedos no Jaraguá, São Sebastião. Monte seu pedido e chame no WhatsApp.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#14402a">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Agropet Mundo dos Animais">
+<meta property="og:description" content="Tudo pro seu pet, no Jaraguá. Monte seu pedido pelo WhatsApp.">
+<meta property="og:image" content="https://graficoscripto-cmyk.github.io/agropet-mundo-dos-animais-sao-sebastiao/og.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;800&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--g:#14402a;--g2:#1d5a3b;--leaf:#8fc45a;--sun:#f5b82e;--cream:#fbf4e4;--brown:#3a2a1a;--r:24px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:Manrope,system-ui,sans-serif;background:var(--g);color:var(--cream);line-height:1.5;overflow-x:hidden}
+h1,h2,h3{font-family:Sora,Manrope,sans-serif;line-height:1.1;letter-spacing:-.015em}
+a{color:inherit;text-decoration:none}
+.wrap{width:100%;max-width:1120px;margin:0 auto;padding:0 22px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 24px;border-radius:999px;border:0;font:700 16px Manrope;cursor:pointer;background:var(--sun);color:var(--brown);transition:transform .2s}
+.btn:active{transform:scale(.97)}
+.btn.ghost{background:transparent;color:var(--cream);border:1.5px solid rgba(251,244,228,.45)}
+/* nav */
+.nav{position:fixed;top:max(10px,env(safe-area-inset-top));left:50%;transform:translateX(-50%);width:min(calc(100% - 20px),720px);z-index:50;display:flex;align-items:center;gap:6px;padding:6px 6px 6px 12px;border-radius:999px;background:rgba(20,64,42,.72);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(251,244,228,.2);transition:transform .35s}
+.nav.hide{transform:translate(-50%,-150%)}
+.nav .lg{display:flex;align-items:center;gap:8px;min-height:44px;font:800 15px Sora}
+.nav .lg svg{width:34px;height:34px}
+.nav ul{display:flex;list-style:none;margin-left:auto}
+.nav ul a{display:inline-flex;align-items:center;min-height:44px;padding:0 10px;font-size:14px;font-weight:600}
+.nav .btn{min-height:44px;padding:0 16px;font-size:14px}
+@media(max-width:520px){.nav .lg b{display:none}.nav ul a{padding:0 8px;font-size:13px}}
+/* hero */
+.hero{position:relative;background:var(--g)}
+.art{position:relative;height:56svh;min-height:360px;overflow:hidden;background:radial-gradient(circle at 30% 20%,#2d7a50,var(--g) 70%)}
+.art svg{position:absolute;inset:0;width:100%;height:100%}
+.art .paw{opacity:0;transform-box:fill-box;transform-origin:center;animation:step 6s ease-in-out infinite}
+@keyframes step{0%{opacity:0;transform:scale(.6)}8%,45%{opacity:.9;transform:scale(1)}60%,100%{opacity:0;transform:scale(1)}}
+.art:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,64,42,.4),transparent 30%,transparent 55%,var(--g))}
+.badge{position:absolute;top:84px;left:22px;z-index:3;font:700 12px Manrope;letter-spacing:.06em;padding:8px 14px;border-radius:999px;background:rgba(20,64,42,.82);border:1px solid rgba(245,184,46,.7)}
+.hero .tx{position:relative;margin-top:-80px;padding-bottom:46px}
+.tag{display:inline-block;font:700 12px Manrope;letter-spacing:.16em;text-transform:uppercase;color:var(--sun);margin-bottom:10px}
+.hero h1{font-size:clamp(36px,10.5vw,70px);font-weight:800;text-shadow:0 4px 26px rgba(0,0,0,.55)}
+.hero h1 em{font-style:normal;color:var(--sun)}
+.hero p.l{font-size:18px;margin:14px 0 24px;max-width:30ch;text-shadow:0 2px 12px rgba(0,0,0,.5)}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.hero .tx>*{opacity:0;transform:translateY(18px)}
+.go .tx>*{opacity:1;transform:none;transition:opacity .7s,transform .7s}
+.go .tx>*:nth-child(2){transition-delay:.1s}.go .tx>*:nth-child(3){transition-delay:.2s}.go .tx>*:nth-child(4){transition-delay:.3s}
+@media(min-width:900px){.hero{display:grid;grid-template-columns:1fr 1fr;min-height:100svh}.art{height:100%;order:2}.hero .tx{margin:0;display:flex;flex-direction:column;justify-content:center;padding:110px 0 60px 8vw}}
+/* marquee */
+.mq{overflow:hidden;background:var(--sun);color:var(--brown);padding:14px 0;font:800 15px Sora;letter-spacing:.12em;text-transform:uppercase}
+.mq div{display:flex;gap:30px;width:max-content;animation:mq 26s linear infinite}
+@keyframes mq{to{transform:translateX(-50%)}}
+section{padding:72px 0}
+section h2{font-size:clamp(30px,8vw,48px);margin-bottom:10px}
+.sub{opacity:.82;font-size:17px;margin-bottom:28px;max-width:34ch}
+.cream{background:var(--cream);color:var(--brown)}
+.cream .tag{color:var(--g2)}
+.cards{display:grid;gap:16px}
+@media(min-width:760px){.cards{grid-template-columns:repeat(2,1fr)}}
+.c{background:#fff;border-radius:var(--r);padding:22px;display:flex;gap:16px;align-items:center;box-shadow:0 10px 30px rgba(58,42,26,.1)}
+.c .ic{flex:0 0 64px;height:64px;border-radius:20px;background:var(--g);display:grid;place-items:center}
+.c .ic svg{width:36px;height:36px}
+.c h3{font-size:20px;margin-bottom:2px}
+.c p{opacity:.78;font-size:15px}
+/* trilha */
+.trail{position:relative;margin-top:30px;height:70px}
+.trail svg{width:100%;height:100%}
+.trail .p{fill:var(--g2);opacity:0;transform-box:fill-box;transform-origin:center;transition:opacity .5s,transform .5s;transform:scale(.5)}
+.trail.in .p{opacity:.85;transform:scale(1)}
+.info{display:grid;gap:14px}
+.row{display:flex;gap:14px;align-items:flex-start;background:rgba(251,244,228,.08);border:1px solid rgba(251,244,228,.15);border-radius:var(--r);padding:18px}
+.row b{display:block;font:800 17px Sora;margin-bottom:2px}
+.row span{opacity:.85}
+.stars{color:var(--sun);letter-spacing:.1em}
+/* sim */
+.simw{background:linear-gradient(180deg,var(--g2),var(--g))}
+.sim{background:var(--cream);color:var(--brown);border-radius:var(--r);padding:22px;box-shadow:0 30px 60px rgba(0,0,0,.35);max-width:620px}
+.sim label{display:block;font:800 13px Manrope;letter-spacing:.1em;text-transform:uppercase;color:var(--g2);margin:18px 0 8px}
+.sim label:first-child{margin-top:0}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opts button{min-height:44px;padding:0 16px;border-radius:999px;border:1.5px solid var(--g2);background:transparent;color:var(--g2);font:700 15px Manrope;cursor:pointer}
+.opts button.on{background:var(--g2);color:var(--cream)}
+.sim .go2{width:100%;margin-top:24px;background:#25a05a;color:#fff}
+.wa{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom));width:56px;height:56px;border-radius:50%;background:#25d366;display:grid;place-items:center;z-index:60;box-shadow:0 8px 24px rgba(0,0,0,.4)}
+.wa svg{width:30px;height:30px;fill:#fff}
+footer{background:#0c2a1a;padding:44px 0 100px;text-align:center;font-size:14px}
+footer a{color:var(--sun);display:inline-flex;align-items:center;min-height:44px}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .6s,transform .6s}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv,.hero .tx>*,.trail .p{opacity:1;transform:none}.art .paw{opacity:.8}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="paw" viewBox="0 0 64 64"><ellipse cx="32" cy="42" rx="14" ry="12"/><ellipse cx="12" cy="28" rx="6" ry="8"/><ellipse cx="26" cy="15" rx="6" ry="8"/><ellipse cx="42" cy="15" rx="6" ry="8"/><ellipse cx="54" cy="28" rx="6" ry="8"/></symbol>
+</defs></svg>
+
+<header class="nav" id="nav">
+  <a class="lg" href="#topo" aria-label="Início"><svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="32" fill="#f5b82e"/><use href="#paw" x="12" y="12" width="40" height="40" fill="#14402a"/></svg><b>Agropet</b></a>
+  <ul><li><a href="#produtos">Produtos</a></li><li><a href="#loja">Loja</a></li><li><a href="#pedido">Pedido</a></li></ul>
+  <a class="btn" href="#pedido">Pedir</a>
+</header>
+
+<main id="topo">
+<div class="hero" id="hero">
+  <div class="art" aria-hidden="true">
+    <svg viewBox="0 0 400 480" preserveAspectRatio="xMidYMid slice">
+      <g fill="#8fc45a">
+        <use class="paw" href="#paw" x="40" y="360" width="54" height="54" style="animation-delay:0s"/>
+        <use class="paw" href="#paw" x="120" y="290" width="54" height="54" style="animation-delay:.5s" transform="rotate(15 147 317)"/>
+        <use class="paw" href="#paw" x="90" y="200" width="54" height="54" style="animation-delay:1s" transform="rotate(-10 117 227)"/>
+        <use class="paw" href="#paw" x="190" y="150" width="54" height="54" style="animation-delay:1.5s" transform="rotate(20 217 177)"/>
+        <use class="paw" href="#paw" x="250" y="230" width="54" height="54" style="animation-delay:2s"/>
+        <use class="paw" href="#paw" x="310" y="140" width="54" height="54" style="animation-delay:2.5s" transform="rotate(-15 337 167)"/>
+      </g>
+      <circle cx="285" cy="80" r="46" fill="#f5b82e" opacity=".95"/>
+      <use href="#paw" x="255" y="50" width="60" height="60" fill="#14402a"/>
+    </svg>
+  </div>
+  <span class="badge">★ 5,0 no Google · 15 Avaliações Reais</span>
+  <div class="wrap tx">
+    <span class="tag">Pet shop · Jaraguá</span>
+    <h1>Tudo pro seu <em>pet.</em></h1>
+    <p class="l">Ração, petisco e cuidado. Pertinho de você.</p>
+    <div class="cta"><a class="btn" href="#pedido">Monte seu pedido</a><a class="btn ghost" href="#produtos">Ver produtos</a></div>
+  </div>
+</div>
+
+<div class="mq" aria-hidden="true"><div><span>Rações e petiscos</span><span>✦</span><span>Medicamentos</span><span>✦</span><span>Brinquedos</span><span>✦</span><span>Disk rações</span><span>✦</span><span>Rações e petiscos</span><span>✦</span><span>Medicamentos</span><span>✦</span><span>Brinquedos</span><span>✦</span><span>Disk rações</span><span>✦</span></div></div>
+
+<section id="produtos" class="cream">
+  <div class="wrap">
+    <span class="tag">O que tem</span>
+    <h2 class="rv">Pro seu bichinho.</h2>
+    <p class="sub rv">Escolha e peça pelo WhatsApp.</p>
+    <div class="cards">
+      <div class="c rv"><div class="ic"><svg viewBox="0 0 64 64" fill="#f5b82e"><path d="M10 26h44l-4 26a6 6 0 0 1-6 5H20a6 6 0 0 1-6-5Z"/><path d="M18 26c0-9 6-16 14-16s14 7 14 16" fill="none" stroke="#8fc45a" stroke-width="5"/></svg></div><div><h3>Rações e petiscos</h3><p>Pra cães, gatos e mais.</p></div></div>
+      <div class="c rv"><div class="ic"><svg viewBox="0 0 64 64"><rect x="26" y="8" width="12" height="48" rx="6" fill="#8fc45a"/><rect x="8" y="26" width="48" height="12" rx="6" fill="#8fc45a"/></svg></div><div><h3>Medicamentos</h3><p>Saúde e cuidado em dia.</p></div></div>
+      <div class="c rv"><div class="ic"><svg viewBox="0 0 64 64" fill="#f5b82e"><circle cx="32" cy="32" r="20"/><path d="M12 32h40M32 12v40" stroke="#14402a" stroke-width="4" fill="none"/></svg></div><div><h3>Brinquedos</h3><p>Diversão pra todo porte.</p></div></div>
+      <div class="c rv"><div class="ic"><svg viewBox="0 0 64 64" fill="#8fc45a"><path d="M6 20h32v22H6zM38 28h12l8 8v6H38z"/><circle cx="18" cy="46" r="6" fill="#f5b82e"/><circle cx="48" cy="46" r="6" fill="#f5b82e"/></svg></div><div><h3>Disk rações</h3><p>Peça e receba em casa.</p></div></div>
+    </div>
+    <div class="trail" id="trail" aria-hidden="true"><svg viewBox="0 0 400 70" preserveAspectRatio="xMidYMid meet">
+      <use class="p" href="#paw" x="10" y="22" width="30" height="30" style="transition-delay:.0s"/><use class="p" href="#paw" x="75" y="8" width="30" height="30" style="transition-delay:.15s"/><use class="p" href="#paw" x="140" y="26" width="30" height="30" style="transition-delay:.3s"/><use class="p" href="#paw" x="205" y="10" width="30" height="30" style="transition-delay:.45s"/><use class="p" href="#paw" x="270" y="28" width="30" height="30" style="transition-delay:.6s"/><use class="p" href="#paw" x="335" y="12" width="30" height="30" style="transition-delay:.75s"/></svg></div>
+  </div>
+</section>
+
+<section id="loja">
+  <div class="wrap">
+    <span class="tag">A loja</span>
+    <h2 class="rv">Agropet Mundo dos Animais</h2>
+    <p class="sub rv">No Jaraguá, em São Sebastião.</p>
+    <div class="info">
+      <div class="row rv"><div><b>Endereço</b><span>Dário Leite Carrijó, 1885 · Jaraguá<br>São Sebastião - SP · 11600-733</span></div></div>
+      <div class="row rv"><div><b>No Google</b><span><span class="stars">★★★★★</span> 5,0 · 15 avaliações reais</span></div></div>
+      <div class="row rv"><div><b>WhatsApp</b><span>(12) 99749-5907</span></div></div>
+    </div>
+    <div class="cta" style="margin-top:24px"><a class="btn" id="rota" target="_blank" rel="noopener" href="#">Como chegar</a></div>
+  </div>
+</section>
+
+<section id="pedido" class="simw">
+  <div class="wrap">
+    <span class="tag">Simulador</span>
+    <h2 class="rv">Monte seu pedido.</h2>
+    <p class="sub rv">Escolha. A mensagem vai pronta pro WhatsApp.</p>
+    <form class="sim rv" onsubmit="return false">
+      <label>Pra quem</label>
+      <div class="opts" data-k="pet"><button type="button" class="on">Cachorro</button><button type="button">Gato</button><button type="button">Outro bicho</button></div>
+      <label>Porte</label>
+      <div class="opts" data-k="porte"><button type="button" class="on">Pequeno</button><button type="button">Médio</button><button type="button">Grande</button></div>
+      <label>O que precisa</label>
+      <div class="opts" data-k="item" data-multi="1"><button type="button" class="on">Ração</button><button type="button">Petisco</button><button type="button">Medicamento</button><button type="button">Brinquedo</button></div>
+      <label>Como quer</label>
+      <div class="opts" data-k="como"><button type="button" class="on">Retirar na loja</button><button type="button">Entrega (disk ração)</button></div>
+      <button class="btn go2" id="send" type="button">Enviar pelo WhatsApp</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer><p><b>Agropet Mundo dos Animais</b></p><p style="opacity:.75;margin:6px 0">Jaraguá · São Sebastião - SP</p><a href="#topo">Voltar ao topo</a></footer>
+
+<a class="wa" id="wa" href="#" aria-label="Chamar no WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.200Zm4.500-6.100c-.2-.1-1.500-.7-1.700-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.200-.3.200-.5.100a6.700 6.700 0 0 1-3.300-2.900c-.3-.4.300-.4.800-1.400.1-.2 0-.3 0-.5l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.300 3 3 0 0 0-.9 2.200c0 1.300.9 2.500 1 2.700.1.200 1.800 2.800 4.400 3.900 1.600.7 2.200.7 3 .6.500-.1 1.500-.6 1.700-1.200.2-.6.2-1.100.2-1.200-.1-.1-.3-.2-.5-.3Z"/></svg></a>
+
+<script>
+const NUM='5512997495907',$=s=>document.querySelector(s);
+const hero=$('#hero');requestAnimationFrame(()=>setTimeout(()=>hero.classList.add('go'),80));
+const nav=$('#nav');let last=0,ty=0;const setN=h=>nav.classList.toggle('hide',h);
+addEventListener('scroll',()=>{const y=scrollY;if(y>30&&y>last+2)setN(true);else if(y<last-2||y<=30)setN(false);last=y},{passive:true});
+addEventListener('wheel',e=>{if(e.deltaY>0&&scrollY>30)setN(true);else if(e.deltaY<0)setN(false)},{passive:true});
+addEventListener('touchstart',e=>{ty=e.touches[0].clientY},{passive:true});
+addEventListener('touchmove',e=>{const d=e.touches[0].clientY-ty;if(d<-6&&scrollY>30)setN(true);else if(d>6)setN(false)},{passive:true});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv,.trail').forEach(el=>io.observe(el));
+const st={pet:'Cachorro',porte:'Pequeno',item:['Ração'],como:'Retirar na loja'};
+document.querySelectorAll('.opts').forEach(g=>g.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;const k=g.dataset.k;
+ if(g.dataset.multi){b.classList.toggle('on');st[k]=[...g.querySelectorAll('.on')].map(x=>x.textContent)}else{g.querySelectorAll('button').forEach(x=>x.classList.remove('on'));b.classList.add('on');st[k]=b.textContent}}));
+function msg(){return 'Olá! Quero fazer um pedido na Agropet Mundo dos Animais.\nPra: '+st.pet+' ('+st.porte+')\nPreciso de: '+(st.item.join(', ')||'a combinar')+'\nComo: '+st.como+'\nPode me ajudar?'}
+$('#send').onclick=()=>window.open('https://wa.me/'+NUM+'?text='+encodeURIComponent(msg()),'_blank','noopener');
+const wa=$('#wa');wa.href='https://wa.me/'+NUM+'?text='+encodeURIComponent('Olá! Vi o site da Agropet Mundo dos Animais.');wa.target='_blank';wa.rel='noopener';
+$('#rota').href='https://www.google.com/maps/place/?q=place_id:ChIJQy3veIad0pQRM1htAr-EZTk';
+</script>
+</body>
+</html>
